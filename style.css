@@ -1,0 +1,185 @@
+div#header{
+	border: 1px solid #DCDCDC;
+	padding: 0 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+td{
+	vertical-align: middle !important;
+}
+div.stepcontainer{
+	text-align: center;
+	height: 100%;
+	width:192px;
+	margin: auto;
+}
+div.measure{
+	height: 256px;
+	display: block;
+	margin: auto;
+	float: left;
+	background-image: url("img/bkgd_2x_single.png");
+	background-repeat: repeat-y;
+	background-position: center top;
+	padding-left: 30px;
+	width: 150px;
+}
+span.measurecount{
+	margin-left: -80px;
+	margin-top: 5px;
+	float: left;
+	color: #999;
+	font-size: 11px;
+}
+span.beatcount{
+	color: #CCC;
+	font-size: 9px;
+	position: absolute;
+	left: -45px;
+	margin-top: 6px;
+}
+span.bpmchange{
+	position: absolute;
+	right: -65px;
+	font-size: 11px;
+	margin-top: 5px;
+	color: red;
+	font-weight: bold;
+}
+span.bpmchange.P250{top:16px;}
+span.bpmchange.P500{top:32px;}
+span.bpmchange.P750{top:48px;}
+div.arrowwrap{
+	height: 32px;
+	width:32px;
+	float: left;
+}
+span.arrow{
+	display: block;
+	height: 32px;
+	width: 32px;
+	background-repeat: no-repeat;
+	z-index:1;
+	position: absolute;
+}
+span.hold{
+	background: url('img/active_hold_body.png') repeat-y;
+	background-position: left bottom;
+	width: 32px;
+	height: 100%;
+	display: block;
+	z-index: -99;
+	position: absolute;
+	margin-top: -16px;
+	
+}
+span.roll{
+	background: url('img/hollow_roll_body.png') repeat-y;
+	background-position: center;
+	width: 32px;
+	height: 100%;
+	display: block;
+	z-index: -99;
+	position: absolute;
+	margin-top: -16px;
+}
+span.hold.left, span.roll.left{
+	left: 0px;
+	top: 32px; 
+}
+span.hold.up, span.roll.up{
+	left: 64px;
+	top: 32px;
+}
+span.hold.down, span.roll.down{
+	left: 32px;
+	top: 32px;
+}
+span.hold.right, span.roll.right{
+	left: 96px;
+	top: 32px;
+}
+div.steprow{
+	position: relative;
+	float: left;
+}
+div.steprow.N4{
+	height: 64px;
+}
+div.steprow.N8{
+	height: 32px;
+}
+div.steprow.N12{
+	height: 21px;
+} 
+div.steprow.N12.red{
+	height: 22px;
+}
+div.steprow.N16{
+	height: 16px;
+} 
+div.steprow.N24{
+	height: 11px;
+} 
+div.steprow.N32{
+	height: 8px;
+} 
+div.steprow.N48{
+	height: 5px;
+} 
+div.steprow.N48.red, div.steprow.N48.blue, div.steprow.N48.green {
+	height: 6px;
+}
+div.steprow.N64{
+	height: 4px;
+}
+div.steprow.N192{
+	height: 1px;
+}
+div.steprow.N192.red, div.steprow.N192.green,  div.steprow.N192.blue, div.steprow.N192.purple, div.steprow.N192.yellow{
+	height: 2px;
+}
+span.arrow.L1{
+	background: url('img/tap_notes.png') 0px 0px;
+}
+span.arrow.D1{
+	background: url('img/tap_notes.png') -32px 0px;
+}
+span.arrow.U1{
+	background: url('img/tap_notes.png') -64px 0px;
+}
+span.arrow.R1{
+	background: url('img/tap_notes.png') -96px 0px;
+}
+span.arrow.LM, span.arrow.DM, span.arrow.UM, span.arrow.RM{
+	background: url('img/mine.png') 0px 0px;
+}
+span.arrow.L3, span.arrow.D3, span.arrow.U3, span.arrow.R3{
+	background: url('img/active_hold_ends.png') 0px -16px;
+	height: 16px;
+	margin-top: 15px;
+}
+span.arrow.L1.red, span.arrow.L2.red, span.arrow.L4.red{background: url('img/tap_notes.png') 0px 0px;}
+span.arrow.D1.red, span.arrow.D2.red, span.arrow.D4.red{background: url('img/tap_notes.png') -32px 0px;}
+span.arrow.U1.red, span.arrow.U2.red, span.arrow.U4.red{background: url('img/tap_notes.png') -64px 0px;}
+span.arrow.R1.red, span.arrow.R2.red, span.arrow.R4.red{background: url('img/tap_notes.png') -96px 0px;}
+span.arrow.L1.blue, span.arrow.L2.blue, span.arrow.L4.blue{background: url('img/tap_notes.png') 0px -32px;}
+span.arrow.D1.blue, span.arrow.D2.blue, span.arrow.D4.blue{background: url('img/tap_notes.png') -32px -32px;}
+span.arrow.U1.blue, span.arrow.U2.blue, span.arrow.U4.blue{background: url('img/tap_notes.png') -64px -32px;}
+span.arrow.R1.blue, span.arrow.R2.blue, span.arrow.R4.blue{background: url('img/tap_notes.png') -96px -32px;}
+span.arrow.L1.green, span.arrow.L2.green, span.arrow.L4.green{background: url('img/tap_notes.png') 0px -96px;}
+span.arrow.D1.green, span.arrow.D2.green, span.arrow.D4.green{background: url('img/tap_notes.png') -32px -96px;}
+span.arrow.U1.green, span.arrow.U2.green, span.arrow.U4.green{background: url('img/tap_notes.png') -64px -96px;}
+span.arrow.R1.green, span.arrow.R2.green, span.arrow.R4.green{background: url('img/tap_notes.png') -96px -96px;}
+span.arrow.L1.purple, span.arrow.L2.purple, span.arrow.L4.purple{background: url('img/tap_notes.png') 0px -64px;}
+span.arrow.D1.purple, span.arrow.D2.purple, span.arrow.D4.purple{background: url('img/tap_notes.png') -32px -64px;}
+span.arrow.U1.purple, span.arrow.U2.purple, span.arrow.U4.purple{background: url('img/tap_notes.png') -64px -64px;}
+span.arrow.R1.purple, span.arrow.R2.purple, span.arrow.R4.purple{background: url('img/tap_notes.png') -96px -64px;}
+span.arrow.L1.yellow, span.arrow.L2.yellow, span.arrow.L4.yellow{background: url('img/tap_notes.png') 0px -128px;}
+span.arrow.D1.yellow, span.arrow.D2.yellow, span.arrow.D4.yellow{background: url('img/tap_notes.png') -32px -128px;}
+span.arrow.U1.yellow, span.arrow.U2.yellow, span.arrow.U4.yellow{background: url('img/tap_notes.png') -64px -128px;}
+span.arrow.R1.yellow, span.arrow.R2.yellow, span.arrow.R4.yellow{background: url('img/tap_notes.png') -96px -128px;}
+span.arrow.L1.lightblue, span.arrow.L2.lightblue, span.arrow.L4.lightblue{background: url('img/tap_notes.png') 0px -160px;}
+span.arrow.D1.lightblue, span.arrow.D2.lightblue, span.arrow.D4.lightblue{background: url('img/tap_notes.png') -32px -160px;}
+span.arrow.U1.lightblue, span.arrow.U2.lightblue, span.arrow.U4.lightblue{background: url('img/tap_notes.png') -64px -160px;}
+span.arrow.R1.lightblue, span.arrow.R2.lightblue, span.arrow.R4.lightblue{background: url('img/tap_notes.png') -96px -160px;}
